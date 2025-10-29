@@ -1,12 +1,11 @@
 FROM node:18-alpine
 
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /app
 
-# Install dependencies. Use npm ci when possible for reproducible installs,
-# fall back to npm install if no lockfile is present.
+
 COPY package*.json ./
-RUN npm ci --only=production || npm install --production
+RUN npm install
 
 # Bundle app source
 COPY . .
@@ -15,4 +14,4 @@ COPY . .
 EXPOSE 3000
 
 # Start the server. We run node directly to avoid requiring a "start" script.
-CMD ["node", "index.js"]
+CMD ["npm", "run", "dev"]
