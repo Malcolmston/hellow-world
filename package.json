@@ -1,0 +1,26 @@
+{
+  "name": "hello_world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malcolmston/hellow-world.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Malcolmston/hellow-world/issues"
+  },
+  "homepage": "https://github.com/Malcolmston/hellow-world#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodeman": "^1.1.2",
+    "nodemon": "^3.1.10"
+  }
+}
